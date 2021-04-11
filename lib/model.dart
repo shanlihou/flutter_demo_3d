@@ -62,6 +62,7 @@ class Model {
           int.parse(values[1].split("/")[0]),
           int.parse(values[2].split("/")[0]),
         ]));
+        material = material.replaceAll("\r", "");
         colors.add(materials[material]);
       }
     });

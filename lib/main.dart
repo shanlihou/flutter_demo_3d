@@ -1,3 +1,4 @@
+import 'package:flutter_demo_3d/static_line.dart';
 import 'package:flutter_demo_3d/object3d.dart';
 import 'package:flutter/material.dart';
 
@@ -15,16 +16,17 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: new AppBar(
           elevation: 0,
-          backgroundColor: Color.fromRGBO(33, 33, 33, 1),
+          backgroundColor: Color.fromRGBO(247, 33, 33, 1),
         ),
         backgroundColor: Color.fromRGBO(33, 33, 33, 1),
         body: Column(
           children: [
-            Object3D(
-              size: Size(400.0, 400.0),
-              zoom: 30.0,
-              path: "assets/brain.obj",
-            ),
+            // Object3D(
+            //   size: Size(400.0, 400.0),
+            //   zoom: 30.0,
+            //   path: "assets/brain.obj",
+            // ),
+            StaticLine(),
           ],
         ),
       ),

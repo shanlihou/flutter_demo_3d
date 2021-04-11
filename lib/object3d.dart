@@ -168,13 +168,13 @@ class _ObjectPainter extends CustomPainter {
     }
 
     // Rotate and translate the vertices
-    verts = List<Math.Vector3>();
+    verts = <Math.Vector3>[];
     for (int i = 0; i < model.verts.length; i++) {
       verts.add(_calcVertex(Math.Vector3.copy(model.verts[i])));
     }
 
     // Sort
-    var sorted = List<Map<String, dynamic>>();
+    var sorted = <Map<String, dynamic>>[];
     for (var i = 0; i < model.faces.length; i++) {
       var face = model.faces[i];
       sorted.add({
